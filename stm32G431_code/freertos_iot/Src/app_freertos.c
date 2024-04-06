@@ -75,6 +75,13 @@ const osThreadAttr_t cntclear_attributes = {
   .priority = (osPriority_t) osPriorityNormal,
   .stack_size = 128 * 4
 };
+/* Definitions for TemperHumidiDec */
+osThreadId_t TemperHumidiDecHandle;
+const osThreadAttr_t TemperHumidiDec_attributes = {
+  .name = "TemperHumidiDec",
+  .priority = (osPriority_t) osPriorityBelowNormal,
+  .stack_size = 128 * 4
+};
 
 /* Private function prototypes -----------------------------------------------*/
 /* USER CODE BEGIN FunctionPrototypes */
@@ -84,6 +91,7 @@ const osThreadAttr_t cntclear_attributes = {
 void AppBodyInductio(void *argument);
 void StartLcd_debug(void *argument);
 void Appcntclear(void *argument);
+void StartTemperHumidiDec(void *argument);
 
 void MX_FREERTOS_Init(void); /* (MISRA C 2004 rule 8.1) */
 
@@ -122,6 +130,9 @@ void MX_FREERTOS_Init(void) {
 
   /* creation of cntclear */
   cntclearHandle = osThreadNew(Appcntclear, NULL, &cntclear_attributes);
+
+  /* creation of TemperHumidiDec */
+  TemperHumidiDecHandle = osThreadNew(StartTemperHumidiDec, NULL, &TemperHumidiDec_attributes);
 
   /* USER CODE BEGIN RTOS_THREADS */
   /* add threads, ... */
@@ -181,6 +192,24 @@ __weak void Appcntclear(void *argument)
     osDelay(1);
   }
   /* USER CODE END Appcntclear */
+}
+
+/* USER CODE BEGIN Header_StartTemperHumidiDec */
+/**
+* @brief Function implementing the TemperHumidiDec thread.
+* @param argument: Not used
+* @retval None
+*/
+/* USER CODE END Header_StartTemperHumidiDec */
+__weak void StartTemperHumidiDec(void *argument)
+{
+  /* USER CODE BEGIN StartTemperHumidiDec */
+  /* Infinite loop */
+  for(;;)
+  {
+    osDelay(1);
+  }
+  /* USER CODE END StartTemperHumidiDec */
 }
 
 /* Private application code --------------------------------------------------*/

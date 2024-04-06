@@ -9,6 +9,7 @@
 "hal_06_lcd\stm32g4xx_it.o"
 "hal_06_lcd\stm32g4xx_hal_msp.o"
 "hal_06_lcd\stm32g4xx_hal_timebase_tim.o"
+"hal_06_lcd\dht11.o"
 "hal_06_lcd\system_stm32g4xx.o"
 "hal_06_lcd\stm32g4xx_hal_gpio.o"
 "hal_06_lcd\stm32g4xx_hal_adc.o"

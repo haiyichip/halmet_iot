@@ -36,6 +36,7 @@ extern "C" {
 #include "lcd.h"
 #include "led.h"
 #include "stdio.h"
+#include "cmsis_os.h"
 #define GetlightInfo() HAL_GPIO_ReadPin(GPIOA,GPIO_PIN_1)
 #define GetBodyWarmInfo() HAL_GPIO_ReadPin(GPIOA,GPIO_PIN_2)
 //#define GetFireInfo() HAL_GPIO_ReadPin(GPIOA,GPIO_PIN_3)

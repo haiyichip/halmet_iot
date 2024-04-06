@@ -21,17 +21,33 @@ Target DLL:      CMSIS_AGDI.dll V1.28.3.0
 Dialog DLL:      TCM.DLL V1.32.0.0
  
 <h2>Project:</h2>
-D:\work_files\IOT_物联网大赛\stm32G431_code\freertos_iot\MDK-ARM\HAL_06_LCD.uvprojx
-Project File Date:  04/05/2024
+D:\work_files\IOT_物联网大赛\halmet_iot\stm32G431_code\freertos_iot\MDK-ARM\HAL_06_LCD.uvprojx
+Project File Date:  04/06/2024
 
 <h2>Output:</h2>
 *** Using Compiler 'V5.06 update 5 (build 528)', folder: 'D:\work_apps\singlechip\Keil5_MDK\ARM\ARMCC\Bin'
 Build target 'HAL_06_LCD'
+assembling startup_stm32g431xx.s...
+compiling stm32g4xx_hal_msp.c...
+compiling adc.c...
+compiling led.c...
+compiling stm32g4xx_it.c...
+compiling dht11.c...
+..\Src\dht11.c(63): warning:  #223-D: function "delay_us" declared implicitly
+  		delay_us(30); //26~28us
+..\Src\dht11.c(100): warning:  #223-D: function "delay_us" declared implicitly
+  		delay_us(55); //????55us
+..\Src\dht11.c: 2 warnings, 0 errors
 compiling main.c...
+compiling app_freertos.c...
+compiling gpio.c...
+compiling lcd.c...
 linking...
-Program Size: Code=18404 RO-data=5236 RW-data=160 ZI-data=9728  
-FromELF: creating hex file...
-"HAL_06_LCD\HAL_06_LCD.axf" - 0 Error(s), 0 Warning(s).
+HAL_06_LCD\HAL_06_LCD.axf: Error: L6218E: Undefined symbol delay_us (referred from dht11.o).
+Not enough information to list image symbols.
+Not enough information to list load addresses in the image map.
+Finished: 2 information, 0 warning and 1 error messages.
+"HAL_06_LCD\HAL_06_LCD.axf" - 1 Error(s), 2 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -54,7 +70,8 @@ Package Vendor: Keil
 <h2>Collection of Component Files used:</h2>
 
    * Component: ARM::CMSIS:CORE:5.6.0
-Build Time Elapsed:  00:00:02
+Target not created.
+Build Time Elapsed:  00:00:08
 </pre>
 </body>
 </html>

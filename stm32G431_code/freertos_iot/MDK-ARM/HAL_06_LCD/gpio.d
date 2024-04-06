@@ -39,3 +39,14 @@ hal_06_lcd\gpio.o: ../Inc/lcd.h
 hal_06_lcd\gpio.o: ../Inc/main.h
 hal_06_lcd\gpio.o: ../Inc/led.h
 hal_06_lcd\gpio.o: D:\work_apps\singlechip\Keil5_MDK\ARM\ARMCC\Bin\..\include\stdio.h
+hal_06_lcd\gpio.o: ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os.h
+hal_06_lcd\gpio.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h
+hal_06_lcd\gpio.o: ../Inc/FreeRTOSConfig.h
+hal_06_lcd\gpio.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h
+hal_06_lcd\gpio.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h
+hal_06_lcd\gpio.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h
+hal_06_lcd\gpio.o: ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F/portmacro.h
+hal_06_lcd\gpio.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h
+hal_06_lcd\gpio.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/task.h
+hal_06_lcd\gpio.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/list.h
+hal_06_lcd\gpio.o: ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h

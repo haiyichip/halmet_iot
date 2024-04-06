@@ -38,3 +38,14 @@ hal_06_lcd\stm32g4xx_hal_msp.o: ../Inc/lcd.h
 hal_06_lcd\stm32g4xx_hal_msp.o: ../Inc/main.h
 hal_06_lcd\stm32g4xx_hal_msp.o: ../Inc/led.h
 hal_06_lcd\stm32g4xx_hal_msp.o: D:\work_apps\singlechip\Keil5_MDK\ARM\ARMCC\Bin\..\include\stdio.h
+hal_06_lcd\stm32g4xx_hal_msp.o: ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os.h
+hal_06_lcd\stm32g4xx_hal_msp.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h
+hal_06_lcd\stm32g4xx_hal_msp.o: ../Inc/FreeRTOSConfig.h
+hal_06_lcd\stm32g4xx_hal_msp.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h
+hal_06_lcd\stm32g4xx_hal_msp.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h
+hal_06_lcd\stm32g4xx_hal_msp.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h
+hal_06_lcd\stm32g4xx_hal_msp.o: ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F/portmacro.h
+hal_06_lcd\stm32g4xx_hal_msp.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h
+hal_06_lcd\stm32g4xx_hal_msp.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/task.h
+hal_06_lcd\stm32g4xx_hal_msp.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/list.h
+hal_06_lcd\stm32g4xx_hal_msp.o: ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h

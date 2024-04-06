@@ -630,6 +630,11 @@
                 </FileArmAds>
               </FileOption>
             </File>
+            <File>
+              <FileName>dht11.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Src\dht11.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
